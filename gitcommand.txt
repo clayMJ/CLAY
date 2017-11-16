@@ -1,0 +1,35 @@
+$sudo apk-get install git
+安装git 
+$mkdir git 
+建立git目录
+$pwd
+显示该目录
+$git 
+进入git
+$git config --global user.name "Your name"
+ git config --global user.email "Your email"
+自报家门
+$git init
+把目录变成变成git管理的仓库
+$ls -ah
+git目录隐藏，用ls -ah查看
+$git add <file> 
+给仓库添加文件
+$git commit -m "执行操作"
+将文件提交到仓库
+$git status
+查看仓库状态
+$git diff
+查看仓库修改内容
+$git log 
+查看git提交历史记录
+$git log --pretty=oneline
+简要查看git历史记录
+$git reset --hard HEAD^   
+                  HEAD^^
+				  HEAD~n
+				  <版本号>
+往上多少个版本，即撤销多少次操作，^一次^^两次~n为n次,或者输出版本号退回该版本
+$git reflog
+查看命令历史，查看版本号
+$
