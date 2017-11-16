@@ -32,4 +32,17 @@ $git reset --hard HEAD^
 往上多少个版本，即撤销多少次操作，^一次^^两次~n为n次,或者输出版本号退回该版本
 $git reflog
 查看命令历史，查看版本号
+$git checkout -- <file>
+把工作区的file文件撤销修改
+$git reset HEAD <file>
+回退版本（见28行）也可撤销修改
+$git rm <file>
+$git commit -m "remove <file>"
+从库里删除文件
+$git checkout --<file>
+如rm <file>,用此命令撤销
+$
+$
+$
+$
 $
