@@ -50,4 +50,15 @@ $git push -u origin master
 推送本地库到远程（-u分支和远程master关联起来，以后可省略）
 $git clone git@github.com:path/rep-name.git
 从github克隆一个本地库
+$git branch
+查看当前分支，分支前有*
+$git checkout -b <name>
+创建分支并将分支指针指向master即以下两条命令$git branch <name> $git checkout <name>
+$git merge <name>
+将master指针指向<name>所指，即分支变成主线
+$git branch -d <name>
+删<name>分支
+$
+$
+$
 $
