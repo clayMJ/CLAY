@@ -66,9 +66,42 @@ $git branch <name>
 新建分支
 $git merge --no-ff -m "what you have done" dev
 禁用fast forward模式归并(多产生一个commit防止文件丢失)
-$
-$
-$
+$git stash
+将工作现场储存起来
+$git stash list
+查看储存到工作现场
+$git stash apply
+恢复
+$git stash drop
+stash内容删除
+$git stash pop
+删除stash
+$git remote // (-v)显示更详细信息
+查看远程库
+$git pull
+把最新的提交从origin/dev抓取下来
+$多人协作模式
+//首先，可以试图用git push origin branch-name推送自己的修改；
+如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+如果合并有冲突，则解决冲突，并在本地提交；
+没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功！
+如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream branch-name origin/branch-name。
+$git tag <name> <commit id>
+默认为HEAD，也可指定一个commit id;
+$git tag -a <tagname> -m "blablabla"
+用指定标签信息
+$git tag -s <tagname> -m "blablabla"
+用pgp签名标签
+$git tag 
+查看所有标签
+$git tag -d <tagname>
+删除标签
+$git push origin <tagname>
+推送某标签到origin
+$git push origin --tags
+推送所有标签
+$git push origin :refs/tags/<tagname>
+删除远程标签
 $
 $
 $
