@@ -53,11 +53,21 @@ $git clone git@github.com:path/rep-name.git
 $git branch
 查看当前分支，分支前有*
 $git checkout -b <name>
-创建分支并将分支指针指向master即以下两条命令$git branch <name> $git checkout <name>
+创建分支并指向该分支,即以下两条命令$git branch <name> $git checkout <name>
 $git merge <name>
 将master指针指向<name>所指，即分支变成主线
 $git branch -d <name>
 删<name>分支
+$git log --graph     ／／注可加--pretty=oneline --abbrev-commit简略输出
+看分支合并图
+$git checkout <branchname>
+切换分支
+$git branch <name>
+新建分支
+$git merge --no-ff -m "what you have done" dev
+禁用fast forward模式归并(多产生一个commit防止文件丢失)
+$
+$
 $
 $
 $
