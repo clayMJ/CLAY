@@ -102,6 +102,22 @@ $git push origin --tags
 推送所有标签
 $git push origin :refs/tags/<tagname>
 删除远程标签
-$
-$
-$
+$get remote add <name> git@gitee.com:<accountname>/<name>.git
+关联gitee      (注意已将github中origin改为github gitee中为gitee)
+$git config --globalcolor.ui true
+git配置显示不同色
+$git add -f <file>
+强行添加文件
+//忽略某些文件是在git工作区添加.gitigore，并可修改此文件来实现git的管理
+$git config --global alias.st status
+将st取代status,即git st替换git status
+**linux(ubuntu或debian强烈推荐)搭建git服务器
+$sudo apt-get install git
+$sudo adduser git
+然后将所有登陆者的公匙导入到/home/git/.ssh/authorized_keys文件，一行一个
+$sudo git init --bare sample.git
+然后编辑/etc/passwd找到类似
+git:x:1001:1001:,,,:/home/git:/bin/bash改为
+git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
+然后每个成员均可clone了即
+$git clone git@server:/srv/sample.git
